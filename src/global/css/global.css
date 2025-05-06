@@ -1,0 +1,21 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(../../assets/ff.png);
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;  
+    min-height: 100vh;
+}
+
+.app-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
