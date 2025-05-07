@@ -1,0 +1,22 @@
+.conteiner-carrusel{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+}
+.carrusel{
+    padding: 10vh;
+}
+.conteiner-targt{
+    width: 98%;
+    height: auto;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+}
+.tit-carru{
+    font-size: 3vh;
+    color: #ffffff;
+    text-align: center;
+    padding: 1%;
+}

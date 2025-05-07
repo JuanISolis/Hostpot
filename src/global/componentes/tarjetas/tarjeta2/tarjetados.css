@@ -1,0 +1,22 @@
+.cointener-tjdos{
+    background-color: #dce0f9;
+    border-style: solid;
+    border-color: #a89ee9;
+    border-radius: 3vh;
+}
+.img-trjdos{
+    width: 20vh;
+    height: auto;
+}
+.ubicacion{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+}
+.direccion{
+    color: #202020;
+    text-align: justify;
+    font-size: 2vh;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}

@@ -1,32 +1,27 @@
 import React from 'react'
 import cofiber from '../../assets/cofiber.png'
+import Carrusel from './carrusel_home/Carrusel'
+import './home.css'
 
 export const Home = () => {
   return (
     <div>
-      <img src={cofiber} alt="Logo" style={{ width: '25%', height: 'auto', borderRadius: '100%'}} />
+      <img src={cofiber} alt="Logo"/>
       <h1>Internet por Fibra Óptica</h1>
 
-      <h4>Somos un equipo dedicado a las telecomunicaciones, brindado conexiones de forma domiciliaria por fibra óptica y por red Wireless en lugares estratégicos.</h4>
+      <h4 className='text-inicial'>
+        Somos un equipo especializado en telecomunicaciones, comprometido con ofrecerte conexiones rápidas, 
+        estables y seguras a través de fibra óptica y redes inalámbricas (Wireless), diseñadas estratégicamente 
+        para llegar justo donde nos necesitas. 
+        <br></br>
+        <br></br>
+        Ya sea en zonas urbanas o rurales, brindamos soluciones eficientes y adaptadas a cada entorno, 
+        garantizando una cobertura confiable y un servicio que evoluciona contigo.
+      </h4>
 
-      <div >
-        <div >
-          <h4 >Multiples dispositivos</h4>
-          <p>Puedes acceder desde cualquier dispositivo como tablets, smartphones, computadoras.</p>
-        </div>
-        <div >
-            <h4 >Precios al alcance de tu bolsillo</h4>
-            <p> El tiempo y el costo lo decides tu, con precios asequibles formamos un plan a tu medida.</p>
-        </div>
-        <div >
-            <h4 >Internet por Fibra Óptica</h4>
-            <p>Somos la mejor opcion de la region, conectate con nosotros y navega a mayor velocidad .</p>
-        </div>
-        <div >
-            <h4 >+ de 150 Puntos de Acceso</h4>
-            <p>Estamos contigo mas cerca de lo que piensas, unete a nuestra</p>
-        </div>
-      </div>
+      <Carrusel/>
+
+      
     </div>
   )
 }

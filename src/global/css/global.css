@@ -5,12 +5,10 @@ body{
     background-size: cover;         
     background-repeat: no-repeat;   
     background-position: center;  
-    min-height: 100vh;
+    height: auto;
 }
 
 .app-container {
-    margin: 0 auto;
-    max-width: 1200px;
     width: 100%;
     box-sizing: border-box;
 }

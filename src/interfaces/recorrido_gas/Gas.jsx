@@ -1,9 +1,10 @@
 import React from 'react'
 import {TarjetaUno} from '../../global/componentes/tarjetas/tarjeta1/TarjetaUno'
+import "./gas.css"
 
 export const Gas = () => {
   return (
-    <div>
+    <div className='conteiner-tarjet'>
       <TarjetaUno
         imagen = "../../assets/LUNES.png"
         descripcion ="Zona a Distribuir"

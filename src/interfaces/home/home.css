@@ -1,0 +1,32 @@
+img{
+    width: 100%;
+    height: auto; 
+}
+h1{
+    color: #ffffff;
+    font-size: 6vh;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+h1,h4{
+    font-family: 'Poppins', sans-serif;
+}
+.text-inicial{
+    font-size: 2vh;
+    color: #ffffff;
+    padding: 1%;
+    text-align: justify;
+}
+.sub-tit{
+    font-size: 3vh;
+    color: #ffffff;
+    text-align: center;
+    padding: 1%;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    padding: 1%;
+    font-size: 2.5vh;
+    color: #ffffff;
+}

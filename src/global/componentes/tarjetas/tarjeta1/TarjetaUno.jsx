@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./tarjetauno.css"
 
 export const TarjetaUno = ({
   imagen,
@@ -19,23 +20,23 @@ export const TarjetaUno = ({
   precio,
 }) => {
   return (
-    <div>
-        <img src={imagen} alt="imagen de tarjeta"  />
-        <p>{descripcion}</p>
-        <p><strong>{punto1}</strong> {punto1a}</p>
-        <p><strong>{punto2}</strong> {punto2a}</p>
-        <p><strong>{punto3}</strong> {punto3a}</p>
-        <p><strong>{punto4}</strong> {punto4a}</p>
-        <p><strong>{punto5}</strong> {punto5a}</p>
-        <p><strong>{punto6}</strong> {punto6a}</p>
-        <p><strong>{punto7}</strong> {punto7a}</p>
-        <p><strong>{punto8}</strong> {punto8a}</p>
-        <p><strong>{punto9}</strong> {punto9a}</p>
-        <p><strong>{punto10}</strong> {punto10a}</p>
-        <p><strong>{punto11}</strong> {punto11a}</p>
-        <p><strong>{punto12}</strong> {punto12a}</p>
-        <p><strong>{punto13}</strong> {punto13a}</p>
-        <p><strong>${precio}</strong> </p>
+    <div className="conteiner-tagetuno">
+      <img src={imagen} alt="imagen de tarjeta" className="img-trj" />
+      <h2>{descripcion}</h2>
+      <p><strong>{punto1}</strong> {punto1a}</p>
+      <p><strong>{punto2}</strong> {punto2a}</p>
+      <p><strong>{punto3}</strong> {punto3a}</p>
+      <p><strong>{punto4}</strong> {punto4a}</p>
+      <p><strong>{punto5}</strong> {punto5a}</p>
+      <p><strong>{punto6}</strong> {punto6a}</p>
+      <p><strong>{punto7}</strong> {punto7a}</p>
+      <p><strong>{punto8}</strong> {punto8a}</p>
+      <p><strong>{punto9}</strong> {punto9a}</p>
+      <p><strong>{punto10}</strong> {punto10a}</p>
+      <p><strong>{punto11}</strong> {punto11a}</p>
+      <p><strong>{punto12}</strong> {punto12a}</p>
+      <p><strong>{punto13}</strong> {punto13a}</p>
+      <p><strong>${precio}</strong> </p>
     </div>
   )
 }

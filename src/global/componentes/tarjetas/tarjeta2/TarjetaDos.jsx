@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import './tarjetados.css'
 
 export const TarjetaDos = ({
     imagen,
@@ -7,10 +8,10 @@ export const TarjetaDos = ({
     direccion,
 }) => {
   return (
-    <div>
-        <img src={imagen} alt="imagen de tarjeta"  />
-        <p><strong>{ubicacion}</strong></p>
-        <p>{direccion}</p>
+    <div className='cointener-tjdos'>
+      <img src={imagen} alt="imagen de tarjeta" className='img-trjdos'/>
+      <p className='ubicacion'><strong>{ubicacion}</strong></p>
+      <p className='direccion'>{direccion}</p>
     </div>
   )
 }
