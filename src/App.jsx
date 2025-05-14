@@ -1,15 +1,14 @@
 // import './App.css'
 import { Ruta } from './rutas/Ruta'
-import './global/css/global.css'
-
+import "./App.css"
 function App() {
-  
+
   return (
-    
-    <div className='app-container'>
-      <Ruta/>
+
+    <div>
+      <Ruta />
     </div>
-    
+
   )
 }
 
