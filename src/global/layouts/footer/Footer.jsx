@@ -16,7 +16,7 @@ export const Footer = () => {
           0960235572
         </p>
       </div>
-      <p>Atención: Lunes a Sabado 8:00 am a 17:30 pm</p>
+      <p>Atención: Lunes a Sabado 8:00 am a 17:30 pmk</p>
     </div>
   )
 }
