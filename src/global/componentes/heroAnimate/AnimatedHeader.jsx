@@ -53,7 +53,7 @@ const HeroFinisher = () => {
             className="finisher-header"
             style={{
                 width: "100%",
-                height: "700px",
+
                 position: "relative",
                 display: "flex",
                 alignItems: "center",

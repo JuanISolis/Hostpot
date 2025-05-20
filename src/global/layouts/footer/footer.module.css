@@ -1,0 +1,32 @@
+.footerContainer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    height: 100px;
+    gap: 10px;
+    
+    p{
+        color: white;
+        font-size: 20px;
+    }
+   
+}
+
+.footerContener__adress{
+    display: flex;
+   
+    
+}
+
+.footerContener__place{
+    display: flex;
+   
+}
+.footerContener__cel{
+    display: flex;
+  
+}

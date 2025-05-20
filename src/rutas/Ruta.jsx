@@ -8,7 +8,7 @@ import Carousel from '../global/componentes/carrousel/Carousel'
 
 export const Ruta = () => {
   return (
-    <div>
+    <div className='containerApp'>
       <Header />
       <AnimatedHeader />
       <Main />

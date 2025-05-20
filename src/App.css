@@ -16,6 +16,13 @@ body {
   background-color: white;
   background-attachment: fixed;
   color: black;
+  min-height: 100vh;
+}
+
+.containerApp{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 a {
