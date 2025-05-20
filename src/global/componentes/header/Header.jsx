@@ -9,6 +9,7 @@ export const Header = () => {
             <Logo />
             <Navbar />
             <HamburgerLogo />
+
         </div>
     )
 }
