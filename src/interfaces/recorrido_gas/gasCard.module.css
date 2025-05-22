@@ -1,0 +1,38 @@
+.gasCard {
+    background-image: linear-gradient(to top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+
+.gasCard__title {
+    text-align: center;
+}
+
+.imgCard {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.containerListUl {
+    color: white;
+}
+
+li span {
+    list-style: none;
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+
+}
+
+.gasCard__list {
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+
+
+.gasCard__content {}

@@ -4,11 +4,7 @@ import "./App.css"
 function App() {
 
   return (
-
-    <div >
-      <Ruta />
-    </div>
-
+    <Ruta />
   )
 }
 
