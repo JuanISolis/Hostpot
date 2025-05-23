@@ -1,11 +1,11 @@
 import React from 'react'
 import style from "./footer.module.css"
+
 export const Footer = () => {
   return (
     <div className={style.footerContainer}>
       <div className={style.footerContener__adress}>
         <div className={style.footerContener__place}>
-          <p>ll</p>
           <p>Estamos ubicados junto al cuerpo de Bomberos, Barrio Eloy Alfaro
           </p>
         </div>
