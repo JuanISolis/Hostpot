@@ -13,7 +13,6 @@ export const GasScreen = () => {
       <CardGas dataCards={dataCards.lugaresQuinta} title={"Viernes Urbano"} />
       <CardGas dataCards={dataCards.lugaresSexta} title={"Sabado Urbano"} />
       <CardGas dataCards={dataCards.lugaresSeptima} title={"DomingoUrbano"} />
-
     </div>
   )
 }
