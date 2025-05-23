@@ -1,5 +1,10 @@
 import { useEffect } from "react";
 import { Logo2 } from "../logo/Logo2";
+import { useNavigate } from "react-router-dom";
+
+const handleClickLogin = () => {
+
+}
 
 
 const HeroFinisher = () => {
@@ -70,6 +75,9 @@ const HeroFinisher = () => {
                 <p style={{ fontSize: "4rem", color: "#fff" }}>
                     HOSTPOT
                 </p>
+
+
+                <button>LOGIN</button>
             </div>
         </section>
     );
