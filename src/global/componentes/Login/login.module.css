@@ -76,11 +76,26 @@ input {
     margin-bottom: 1rem;
 }
 
-.chooseUserPinBtn {
-    cursor: pointer;
-    border-radius: 8px;
-}
 
 .pinBox {}
 
 .userBox {}
+
+.chooseUserPinBtn {
+    background-color: white;
+    padding: 9px 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(134, 129, 129);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.active {
+    background-color: #007bff;
+    /* azul cuando está activo */
+    color: white;
+    font-weight: bold;
+    border: 1px solid #0056b3;
+}

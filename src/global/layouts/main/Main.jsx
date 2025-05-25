@@ -4,7 +4,7 @@ import { GasScreen } from '../../../interfaces/recorrido_gas/GasScreen'
 import { HotelTurismo } from '../../../interfaces/hotel_turismo/HotelTurismo'
 import { AgendaMedica } from '../../../interfaces/agendamiento_medico/AgendaMedica'
 import { BusUrbanoScreen } from "../../../interfaces/busUrbano/BusUrbanoScreen";
-import { LoginScreen } from "../../componentes/Login/LoginScreen";
+import { RouterAuth } from "../../../routes/RouterAuth";
 
 export const Main = () => {
   return (
@@ -15,7 +15,7 @@ export const Main = () => {
         <Route path="/bus_urbano" element={<BusUrbanoScreen />} />
         <Route path="/hoteleria_y_turismo" element={<HotelTurismo />} />
         <Route path="/cita_medica" element={<AgendaMedica />} />
-        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/login" element={<RouterAuth />} />
       </Routes>
     </>
   )

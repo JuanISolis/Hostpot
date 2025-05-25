@@ -5,8 +5,7 @@ import { LoginScreen } from './global/componentes/Login/LoginScreen'
 function App() {
 
   return (
-    // <Ruta />
-    <LoginScreen />
+    <Ruta />
   )
 }
 
