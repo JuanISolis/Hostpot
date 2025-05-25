@@ -1,13 +1,16 @@
 import { useEffect } from "react";
 import { Logo2 } from "../logo/Logo2";
 import { useNavigate } from "react-router-dom";
-
-const handleClickLogin = () => {
-
-}
-
+import style from "./buttonLogin.module.css"
 
 const HeroFinisher = () => {
+
+
+    const navigate = useNavigate();
+    const handleClickLogin = () => {
+        navigate("/login");
+    }
+
     useEffect(() => {
         const script = document.createElement("script");
         script.src = "/finisher-header.es5.min.js";
@@ -77,7 +80,7 @@ const HeroFinisher = () => {
                 </p>
 
 
-                <button>LOGIN</button>
+                <button className={style.btnLogin} onClick={handleClickLogin}>LOGIN</button>
             </div>
         </section>
     );

@@ -25,6 +25,8 @@ const busUrbanoLinea1 = [
         referencia: "Parada Camal"
     }
 ];
+
+
 const busUrbanoLinea2 = [
     {
         barrio: "Las Vegas",
