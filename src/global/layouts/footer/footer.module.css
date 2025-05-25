@@ -1,6 +1,6 @@
 .footerContainer{
     height: 20vh;
-    background-color: black;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #2c3e50);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,15 +11,16 @@
     
     p{
         color: white;
-        font-size: 20px;
+        font-size: 13px;
     }
    
 }
 
 .footerContener__adress{
     display: flex;
-   
-    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .footerContener__place{
@@ -28,5 +29,14 @@
 }
 .footerContener__cel{
     display: flex;
-  
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  
+}
+
+.footerContener__atencion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  
 }

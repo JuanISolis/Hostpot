@@ -57,3 +57,10 @@ img {
   position: absolute;
   z-index: -1;
 }
+
+.flex{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

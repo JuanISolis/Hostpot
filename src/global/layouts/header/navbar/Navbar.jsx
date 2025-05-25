@@ -1,35 +1,57 @@
 import { NavLink } from 'react-router-dom';
 import style from "./navbar.module.css";
+import { RiHome2Line } from "react-icons/ri";
+import { FaMap } from "react-icons/fa";
+import { AiFillLayout } from "react-icons/ai";
+import { FaBriefcaseMedical } from "react-icons/fa6";
 export const Navbar = () => {
   return (
     <ul className={style.nav}>
       <li>
-        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/">
+        <NavLink
+          className={({ isActive }) =>
+            `flex ${isActive ? "active" : ""}`
+          }
+          to="/"
+        >
+          <RiHome2Line />
           Home
         </NavLink>
       </li>
       <li>
 
-        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/recorrido_del_gas">
+        <NavLink className={({ isActive }) =>
+          `flex ${isActive ? "active" : ""}`
+        } to="/recorrido_del_gas">
+          <FaMap />
           Recorrido del gas
         </NavLink>
       </li>
       <li>
-        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/bus_urbano">
+        <NavLink className={({ isActive }) =>
+          `flex ${isActive ? "active" : ""}`
+        } to="/bus_urbano">
+          <FaMap />
           Bus urbano
         </NavLink>
 
       </li>
       <li>
 
-        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/hoteleria_y_turismo">
+        <NavLink className={({ isActive }) =>
+          `flex ${isActive ? "active" : ""}`
+        } to="/hoteleria_y_turismo">
+          <AiFillLayout />
           Hotelería y Turismo
         </NavLink>
       </li>
 
       <li>
 
-        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="/cita_medica">
+        <NavLink className={({ isActive }) =>
+          `flex ${isActive ? "active" : ""}`
+        } to="/cita_medica">
+          <FaBriefcaseMedical />
           Cita médica
         </NavLink>
       </li>
