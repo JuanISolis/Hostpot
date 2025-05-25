@@ -35,7 +35,7 @@
     background: rgba(255, 255, 255, 0.1);
     /* vidrio translúcido */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     /* efecto de desenfoque */
     -webkit-backdrop-filter: blur(10px);
     /* soporte para Safari */
