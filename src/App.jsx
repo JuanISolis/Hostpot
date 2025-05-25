@@ -1,11 +1,15 @@
-// import './App.css'
+
 import { Ruta } from './rutas/Ruta'
-import "./App.css"
 import { LoginScreen } from './global/componentes/Login/LoginScreen'
+import "./App.css"
+import { Route, Routes } from 'react-router-dom'
 function App() {
 
   return (
-    <Ruta />
+    <Routes>
+      <Route path="/login" element={<LoginScreen />} />
+      <Route path="/*" element={<Ruta />} />
+    </Routes>
   )
 }
 

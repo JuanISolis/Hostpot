@@ -1,10 +1,29 @@
 
 import { useState } from "react"
 import style from "./login.module.css"
+
+import { AiFillBackward } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 export const LoginScreen = () => {
     const [stateformPin, setStateformPin] = useState(true)
+
+
+    const navigate = useNavigate()
+
+    const handleBtnBack = () => {
+        navigate('/')
+    }
+
+    // const [stateformUser, setStateformUser] = useState(false)
     return (
         <div className={style.loginScreen}>
+
+            <div className={style.containerBtnBackLogin}>
+                <button className={style.returnBtn} onClick={handleBtnBack}>
+                    <AiFillBackward />
+                    Regresar
+                </button>
+            </div>
             <div className={style.login}>
                 <h3>COFIBER</h3>
                 <p>Conectividad sin limites</p>
