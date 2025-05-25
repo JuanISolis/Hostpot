@@ -5,14 +5,16 @@
     
 }
 li{
-    padding: 5px;
     margin: 5px;
-    border: 2px solid #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 0 10px;
     font-size: 1.2rem;
-  
 }
 
+.nav li a{
+    color : #fff;
+    border: none;
+    text-decoration: none;
+}
 @media screen and (min-width: 800px) {
         .nav{
             display: flex;

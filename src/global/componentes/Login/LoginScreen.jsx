@@ -14,7 +14,6 @@ export const LoginScreen = () => {
         navigate('/')
     }
 
-    // const [stateformUser, setStateformUser] = useState(false)
     return (
         <div className={style.loginScreen}>
 

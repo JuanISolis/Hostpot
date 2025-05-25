@@ -1,13 +1,13 @@
 .footerContainer{
+    height: 20vh;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 20px;
-    height: 100px;
     gap: 10px;
+    
     
     p{
         color: white;
