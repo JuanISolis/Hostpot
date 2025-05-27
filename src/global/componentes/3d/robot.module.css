@@ -1,15 +1,18 @@
 .Robot {
     position: absolute;
+    right: 25vw;
+    bottom: -30vh;
+    width: 100%;
     display: none;
+    font-size: 5rem;
+    cursor: pointer;
 }
 
 @media (min-width: 568px) {
     .Robot {
-        width: 100%;
         display: block;
-        right: 25vw;
-        bottom: -30vh;
-        display: block;
+        opacity: 1;
+    
     }
 }
 

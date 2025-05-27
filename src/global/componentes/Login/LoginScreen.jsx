@@ -1,5 +1,5 @@
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import style from "./login.module.css"
 
 import { AiFillBackward } from "react-icons/ai";
@@ -14,6 +14,31 @@ export const LoginScreen = () => {
         navigate('/')
     }
 
+    const TypingEffect = ({ text, speed = 150 }) => {
+        const [displayedText, setDisplayedText] = useState("");
+
+        useEffect(() => {
+            let index = 0;
+
+            const interval = setInterval(() => {
+                setDisplayedText((prev) => {
+                    // Agregamos la siguiente letra basada en el índice actual
+                    const nextChar = text.charAt(index);
+                    index++;
+                    return prev + nextChar;
+                });
+
+                if (index >= text.length) {
+                    clearInterval(interval);
+                }
+            }, speed);
+
+            return () => clearInterval(interval);
+        }, [text, speed]);
+
+        return <p>{displayedText}</p>;
+    };
+
     return (
         <div className={style.loginScreen}>
 
@@ -25,7 +50,7 @@ export const LoginScreen = () => {
             </div>
             <div className={style.login}>
                 <h3>COFIBER</h3>
-                <p>Conectividad sin limites</p>
+                <TypingEffect text="Conectividad sin limites" />
                 <div className={style.chooseUserPin}>
                     <button
                         className={`${style.chooseUserPinBtn} ${!stateformPin ? style.active : ''}`}
