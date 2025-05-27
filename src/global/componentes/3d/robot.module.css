@@ -1,0 +1,37 @@
+.Robot {
+    position: absolute;
+    width: 100%;
+    right: 5rem;
+    animation: bajarRobot 1.5s ease forwards;
+    z-index: 1000;
+    top: 200px;
+}
+
+@keyframes bajarRobot {
+    from {
+        top: -7rem;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .Robot {
+        position: absolute;
+        width: 70%;
+        left: 0;
+        top: 100px;
+        display: block;
+        width: 70%;
+        right: 11rem;
+
+        animation: bajarRobot 1.5s ease forwards;
+
+    }
+
+}

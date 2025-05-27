@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Logo2 } from "../logo/Logo2";
 import { useNavigate } from "react-router-dom";
 import style from "./buttonLogin.module.css"
+import { Robot } from "../3d/robot";
 
 const HeroFinisher = () => {
 
@@ -57,6 +58,8 @@ const HeroFinisher = () => {
     }, []);
 
     return (
+
+
         <section
             className="finisher-header"
             style={{
@@ -71,6 +74,8 @@ const HeroFinisher = () => {
                 padding: "2rem",
             }}
         >
+
+            <Robot />
             <div style={{ zIndex: 1 }}>
                 <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
                     <Logo2 />
