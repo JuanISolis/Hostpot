@@ -58,8 +58,6 @@ const HeroFinisher = () => {
     }, []);
 
     return (
-
-
         <section
             className="finisher-header"
             style={{
@@ -74,7 +72,6 @@ const HeroFinisher = () => {
                 padding: "2rem",
             }}
         >
-
             <Robot />
             <div style={{ zIndex: 1 }}>
                 <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
@@ -83,8 +80,6 @@ const HeroFinisher = () => {
                 <p style={{ fontSize: "4rem", color: "#fff" }}>
                     HOSTPOT
                 </p>
-
-
                 <button className={style.btnLogin} onClick={handleClickLogin}>LOGIN</button>
             </div>
         </section>
