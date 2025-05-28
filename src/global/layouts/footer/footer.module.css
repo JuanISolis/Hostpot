@@ -1,6 +1,6 @@
 .footerContainer{
+    background-color: #1a1a1a;
     height: 20vh;
-    background: linear-gradient(135deg, #000000, #1a1a1a, #2c3e50);
     display: flex;
     flex-direction: column;
     justify-content: center;

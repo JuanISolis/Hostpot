@@ -69,3 +69,35 @@ img {
   overflow: hidden;
 }
 
+
+
+
+//carrousel
+
+
+
+
+.glide li img{
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.glide__arrow--left{
+  background: black !important;
+  color: white;
+}
+.glide__arrow--right{
+  background: black !important; 
+  color: white;
+}

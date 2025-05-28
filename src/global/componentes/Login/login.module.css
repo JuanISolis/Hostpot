@@ -81,7 +81,6 @@ input {
 
 .active {
     background-color: #007bff;
-    /* azul cuando está activo */
     color: white;
     font-weight: bold;
     border: 1px solid #0056b3;
