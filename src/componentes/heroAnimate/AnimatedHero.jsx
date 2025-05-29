@@ -4,11 +4,7 @@ import { LogoBig } from "../logo/LogoBig";
 import styleHero from "./AnimatedHero.module.css";
 import style from "./buttonLogin.module.css";
 
-const AnimatedHero = () => {
-    const navigate = useNavigate();
-    const handleClickLogin = () => {
-        navigate("/login");
-    };
+const AnimatedHero = ({ title, btn }) => {
 
     useEffect(() => {
         const script = document.createElement("script");
@@ -82,10 +78,10 @@ const AnimatedHero = () => {
                 <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
                     <LogoBig />
                 </h1>
-                <p style={{ fontSize: "4rem", color: "#fff" }}>
-                    HOSTPOT
+                <p style={{ fontSize: "4rem", color: "#fff", fontFamily: "Playfair Display" }}>
+                    {title}
                 </p>
-                <button className={style.btnLogin} onClick={handleClickLogin}>LOGIN</button>
+                {btn}
             </div>
         </section>
     );

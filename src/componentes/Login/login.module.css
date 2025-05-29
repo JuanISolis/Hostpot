@@ -12,7 +12,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: 'Arial', sans-serif;
+    font-family: "Playfair Display", serif;
     color: white;
 }
 
@@ -44,6 +44,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
 }
 
 .chooseUserPin button {
@@ -52,6 +53,7 @@
     font-size: 1rem;
     margin-bottom: 1rem;
     color: rgb(134, 129, 129);
+    font-family: "Playfair Display", serif;
 }
 
 input {
@@ -61,6 +63,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
 }
 
 
@@ -77,6 +80,7 @@ input {
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Playfair Display", serif;
 }
 
 .active {
@@ -104,6 +108,7 @@ input {
     border: 1px solid rgba(255, 255, 255, 0.18);
     color: white;
     text-align: center;
+    font-family: "Playfair Display", serif;
 }
 
 .returnBtn:hover {

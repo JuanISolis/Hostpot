@@ -4,6 +4,7 @@ import { AiFillBackward } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
 import style from "./login.module.css"
+import AnimatedHero from "../heroAnimate/AnimatedHero";
 
 
 export const LoginScreen = () => {
@@ -39,6 +40,7 @@ export const LoginScreen = () => {
 
         <>
             <div className={style.loginScreen}>
+                <AnimatedHero />
                 <div className={style.containerBtnBackLogin}>
                     <button className={style.returnBtn} onClick={handleBtnBack}>
                         <AiFillBackward />
