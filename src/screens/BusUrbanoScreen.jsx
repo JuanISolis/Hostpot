@@ -1,7 +1,7 @@
 
-import { BusCard } from "../componentes/Bus/BusCard"
 import style from "./BusUrbanoScreen.module.css"
 import dataBusUrbano from "../data/dataBusUrbano"
+import { BusCard } from "../componentes/Bus/BusCard"
 
 export const BusUrbanoScreen = () => {
     return (

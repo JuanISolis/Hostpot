@@ -1,5 +1,6 @@
 
 import style from "./busCard.module.css"
+import busUrbano from "../../assetsCris/Bus/busUrbano.webp"
 
 export const BusCard = ({ dataCards, title }) => {
     return (
