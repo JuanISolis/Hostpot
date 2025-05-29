@@ -9,9 +9,10 @@ export const Footer = () => {
       <div className={style.footerContener__adress}>
         <div className={style.footerContener__place}>
           <AiTwotoneEnvironment />
-          <p>Estamos ubicados junto al cuerpo de Bomberos, Barrio Eloy Alfaro
+          <p>Cuerpo de Bomberos, Barrio Eloy Alfaro
           </p>
         </div>
+        <div className={style.row}></div>
       </div>
       <div className={style.footerContener__cel}>
         <AiTwotonePhone />
@@ -19,11 +20,12 @@ export const Footer = () => {
           0960235572
         </p>
       </div>
+      <div className={style.row}></div>
       <div className={style.footerContener__atencion}>
         <AiTwotoneProfile />
         <p>Atención: Lunes a Sabado 8:00 am a 17:30 pm</p>
       </div>
-
+      <div className={style.row}></div>
     </div>
   )
 }

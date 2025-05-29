@@ -1,13 +1,9 @@
-.footerContainer{
+.footerContainer {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(10px);
     height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: white;
     gap: 10px;
     width: 100%;
@@ -15,43 +11,61 @@
     bottom: 0;
     left: 0;
     font-family: "Playfair Display", serif;
-    p{
+    display: flex;
+    flex-direction: column;
+
+
+    p {
         color: white;
         font-size: 16px;
     }
 }
 
+.row {
+    background-color: white;
+    height: 60px;
+    width: 0.5px;
+    transform: rotate(-45deg);
+    margin-left: 2rem;
+}
+
 @media (min-width: 800px) {
-    .footerContainer{
-      
-        p{
+    .footerContainer {
+
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+
+        p {
             color: white;
             font-size: 20px;
         }
     }
 }
 
-.footerContener__adress{
+.footerContener__adress {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.footerContener__place{
+.footerContener__place {
     display: flex;
-   
-}
-.footerContener__cel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;  
+
 }
 
-.footerContener__atencion{
+.footerContener__cel {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;  
+    gap: 10px;
+}
+
+.footerContener__atencion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
