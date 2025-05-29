@@ -1,4 +1,4 @@
-import { LoginScreen } from "../global/componentes/Login/LoginScreen";
+import { LoginScreen } from "../componentes/Login/LoginScreen";
 
 
 

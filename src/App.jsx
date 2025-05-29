@@ -1,14 +1,14 @@
 
-import { Ruta } from './rutas/Ruta'
-import { LoginScreen } from './global/componentes/Login/LoginScreen'
-import "./App.css"
+import { HostpotApp } from './routes/HostpotApp'
+import { LoginScreen } from './componentes/Login/LoginScreen'
 import { Route, Routes } from 'react-router-dom'
+import "./App.css"
 function App() {
 
   return (
     <Routes>
       <Route path="/login" element={<LoginScreen />} />
-      <Route path="/*" element={<Ruta />} />
+      <Route path="/*" element={<HostpotApp />} />
     </Routes>
   )
 }
