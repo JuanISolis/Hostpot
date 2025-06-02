@@ -75,9 +75,9 @@ const AnimatedHero = ({ title, btn }) => {
             }}
         >
             <div style={{ zIndex: 1 }}>
-                <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
+                {/* <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
                     <LogoBig />
-                </h1>
+                </h1> */}
                 <p style={{ fontSize: "4rem", color: "#fff", fontFamily: "Playfair Display" }}>
                     {title}
                 </p>
