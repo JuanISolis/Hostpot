@@ -1,6 +1,12 @@
 
 .cardHotel {
-    margin-top:5rem
+    margin-top:5rem;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.cardHotel p {
+    text-align: center;
 }
 
 .HotelTourismScreen {
