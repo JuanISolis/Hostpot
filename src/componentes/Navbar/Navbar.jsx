@@ -46,7 +46,7 @@ export const Navbar = () => {
         </NavLink>
       </li>
 
-      <li>
+      {/* <li>
 
         <NavLink className={({ isActive }) =>
           `flex ${isActive ? "active" : ""}`
@@ -54,7 +54,7 @@ export const Navbar = () => {
           <FaBriefcaseMedical />
           Cita médica
         </NavLink>
-      </li>
+      </li> */}
     </ul >
   );
 };

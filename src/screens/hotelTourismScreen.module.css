@@ -1,0 +1,36 @@
+
+.cardHotel {
+    margin-top:5rem
+}
+
+.HotelTourismScreen {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .HotelTourismScreen {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .cardHotel {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .cardHotel:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardHotel img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
