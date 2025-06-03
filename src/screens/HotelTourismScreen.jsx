@@ -3,6 +3,7 @@ import imgHotel1 from "../assetsCris/hotel/hotel1.jpeg"
 import imgHotel2 from "../assetsCris/hotel/hotel2.jpeg"
 import imgHotel3 from "../assetsCris/hotel/hotel3.jpeg"
 import AnimatedHero from "../componentes/heroAnimate/AnimatedHero"
+import { Footer } from "../componentes/Footer"
 
 export const HotelTourismScreen = () => {
   return (
@@ -17,6 +18,7 @@ export const HotelTourismScreen = () => {
       <div className={style.cardHotel}>
         <img src={imgHotel3} alt="imagen de hotel 3" />
       </div>
+      <Footer />
     </div>
   )
 }
