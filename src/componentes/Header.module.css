@@ -21,6 +21,6 @@
     .header{
         position: fixed;
         backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(9px);
     }
   }
