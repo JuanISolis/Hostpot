@@ -7,7 +7,6 @@ import { Footer } from '../componentes/Footer'
 export const HomeScreen = () => {
     return (
         <div>
-
             <Robot />
             <Footer />
         </div>
