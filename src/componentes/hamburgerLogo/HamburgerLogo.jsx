@@ -1,10 +1,12 @@
 
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 import style from "./hamburger.module.css";
-export const HamburgerLogo = () => {
+
+export const HamburgerLogo = ({ isOpen, toggleMenu }) => {
     return (
-        <div className={style.HamburgerLogo}>
-            <RxHamburgerMenu />
+        <div className={style.HamburgerLogo} onClick={toggleMenu}>
+            {isOpen ? <IoClose /> : <RxHamburgerMenu />}
         </div>
-    )
-}
+    );
+};

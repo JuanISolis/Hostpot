@@ -14,7 +14,6 @@
     padding: 10px 20px;
     z-index: 1000;
     align-items: center;
-    /* transform: translateX(-100%); */
 }
 
 @media screen and (min-width: 800px) {

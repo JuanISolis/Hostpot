@@ -60,65 +60,67 @@
 // };
 
 
-import { useState } from 'react';
+
 import { NavLink } from 'react-router-dom';
 import { RiHome2Line } from "react-icons/ri";
 import { FaMap } from "react-icons/fa";
 import { AiFillLayout } from "react-icons/ai";
 import style from "./navbar.module.css";
 
-export const Navbar = ({ isOpen }) => {
+export const Navbar = ({ isOpen, setIsOpen }) => {
 
+  console.log(isOpen)
 
   return (
-    <>
-      <ul className={`${style.nav} ${isOpen ? style.navActive : ""}`}>
-        <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `${style.link} ${isActive ? style.active : ""}`
-            }
-          >
-            <RiHome2Line />
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/recorrido_del_gas"
-            className={({ isActive }) =>
-              `${style.link} ${isActive ? style.active : ""}`
-            }
-          >
-            <FaMap />
-            Recorrido del gas
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/bus_urbano"
-            className={({ isActive }) =>
-              `${style.link} ${isActive ? style.active : ""}`
-            }
-          >
-            <FaMap />
-            Bus urbano
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/hoteleria_y_turismo"
-            className={({ isActive }) =>
-              `${style.link} ${isActive ? style.active : ""}`
-            }
-          >
-            <AiFillLayout />
-            Hotelería y Turismo
-          </NavLink>
-        </li>
-      </ul>
-    </>
+    <ul className={`${style.nav} ${isOpen ? style.active : ""}`}>
+      <li>
+        <NavLink
+          to="/"
+          onClick={() => setIsOpen(false)}
+          className={({ isActive }) =>
+            `${style.link} ${isActive ? style.active : ""}`
+          }
+        >
+          <RiHome2Line />
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/recorrido_del_gas"
+          onClick={() => setIsOpen(false)}
+          className={({ isActive }) =>
+            `${style.link} ${isActive ? style.active : ""}`
+          }
+        >
+          <FaMap />
+          Recorrido del gas
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/bus_urbano"
+          onClick={() => setIsOpen(false)}
+          className={({ isActive }) =>
+            `${style.link} ${isActive ? style.active : ""}`
+          }
+        >
+          <FaMap />
+          Bus urbano
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/hoteleria_y_turismo"
+          onClick={() => setIsOpen(false)}
+          className={({ isActive }) =>
+            `${style.link} ${isActive ? style.active : ""}`
+          }
+        >
+          <AiFillLayout />
+          Hotelería y Turismo
+        </NavLink>
+      </li>
+    </ul>
   );
 };
-
