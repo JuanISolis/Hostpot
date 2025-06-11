@@ -61,11 +61,7 @@ export const CarrouselSwiper = () => (
                         </div>
                     </SwiperSlide>
                 ))}
-                <div className={styles.navigationWrapper}>
-                    <div className={`${styles.prevButton} swiper-button-prev`}></div>
-                    <div className={`${styles.pagination} swiper-pagination`}></div>
-                    <div className={`${styles.nextButton} swiper-button-next`}></div>
-                </div>
+
             </Swiper>
         </div>
     </div>
