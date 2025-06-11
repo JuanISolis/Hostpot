@@ -9,8 +9,9 @@ import { CarrouselSwiper } from "../componentes/carrousel/CarrouselSwiper"
 export const HotelTourismScreen = () => {
   return (
     <>
+
+      <AnimatedHero />
       <div className={style.HotelTourismScreen}>
-        <AnimatedHero />
         <div className={style.cardHotel}>
           <img src={imgHotel1} alt="imagen de hotel 1" />
           <p>shushufindi central</p>
@@ -28,7 +29,6 @@ export const HotelTourismScreen = () => {
         </div>
       </div>
       <CarrouselSwiper />
-      {/* <Footer /> */}
     </>
   )
 }
