@@ -10,7 +10,7 @@ export const HomeScreen = () => {
     return (
         <>
             <Robot />
-            <CarrouselSwiperHOME />
+            {/* <CarrouselSwiperHOME /> */}
             <Footer />
         </>
     )
