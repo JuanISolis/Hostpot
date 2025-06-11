@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+
 body {
   margin: 0;
   font-family: "Playfair Display", serif;
@@ -23,8 +24,7 @@ body {
 .containerApp{
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-
+  /* min-height: 100vh; */
 }
 
 a {

@@ -18,7 +18,7 @@ export const LoginScreen = () => {
 
         setTimeout(() => {
             setCanClose(true);
-        }, 60000); // 1 minuto
+        }, 60000);
     };
 
     const [stateformPin, setStateformPin] = useState(true);

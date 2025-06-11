@@ -6,7 +6,7 @@ import style from "./hamburger.module.css";
 export const HamburgerLogo = ({ isOpen, toggleMenu }) => {
     return (
         <div className={style.HamburgerLogo} onClick={toggleMenu}>
-            {isOpen ? <IoClose /> : <RxHamburgerMenu />}
+            {isOpen ? <IoClose size={50} /> : <RxHamburgerMenu size={50} />}
         </div>
     );
 };
