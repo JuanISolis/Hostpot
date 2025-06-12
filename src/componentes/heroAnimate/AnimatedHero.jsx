@@ -1,8 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { LogoBig } from "../logo/LogoBig";
 import styleHero from "./AnimatedHero.module.css";
-import style from "./buttonLogin.module.css";
 
 const AnimatedHero = ({ title, btn }) => {
 
