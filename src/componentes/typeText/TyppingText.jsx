@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 export const TyppingText = ({ text, speed = 150 }) => {
     const [displayedText, setDisplayedText] = useState("");
 
