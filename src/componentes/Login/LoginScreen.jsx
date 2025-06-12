@@ -76,7 +76,7 @@ export const LoginScreen = () => {
                     </div>
                     <div className={style.login}>
                         <h3>COFIBER</h3>
-                        <TypingEffect text="Conectividad sin límites" />
+                        <TypingEffect text="Coonectividad sin límites" />
                         <div className={style.chooseUserPin}>
                             <button
                                 className={`${style.chooseUserPinBtn} ${!stateformPin ? style.active : ''}`}
