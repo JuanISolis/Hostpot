@@ -1,32 +1,43 @@
 import { useState, useEffect } from "react";
 import { AiFillBackward } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-
 import style from "./login.module.css";
 import AnimatedHero from "../heroAnimate/AnimatedHero";
 import { ModalVideo } from "../modalVideo/ModalVideo";
-import { CarrouselSwiper } from "../carrousel/CarrouselSwiper";
+
 
 export const LoginScreen = () => {
     const [showVideo, setShowVideo] = useState(false);
     const [canClose, setCanClose] = useState(false);
+    const [timePassed, setTimePassed] = useState(false);
+    const [videoClosed, setVideoClosed] = useState(false);
 
     const handleTestGratis = (e) => {
         e.preventDefault();
         setShowVideo(true);
         setCanClose(false);
+        setTimePassed(false);
 
         setTimeout(() => {
             setCanClose(true);
-        }, 60000);
+            setTimePassed(true);
+        }, 10000);
+
     };
 
     const [stateformPin, setStateformPin] = useState(true);
     const navigate = useNavigate();
+    useEffect(() => {
+        if (timePassed && videoClosed) {
+            window.location.href = "https://www.facebook.com/Cofyber?mibextid=ZbWKwL";
+        }
+    }, [timePassed, videoClosed]);
 
     const handleBtnBack = () => {
         navigate('/');
     };
+
+
 
     const TypingEffect = ({ text, speed = 150 }) => {
         const [displayedText, setDisplayedText] = useState("");
@@ -49,8 +60,10 @@ export const LoginScreen = () => {
         <>
             {showVideo ? (
                 <ModalVideo
-                    canClose={canClose}
-                    onClose={() => setShowVideo(false)}
+                    onClose={() => {
+                        setShowVideo(false);
+                        setVideoClosed(true);
+                    }}
                 />
             ) : (
                 <div className={style.loginScreen}>
