@@ -62,9 +62,9 @@ export default function Carousel() {
     useEffect(() => {
         const interval = setInterval(() => {
             next();
-        }, 3000); // cambia de imagen cada 3 segundos
+        }, 3000);
 
-        return () => clearInterval(interval); // limpia intervalo al desmontar
+        return () => clearInterval(interval);
     }, []);
 
     useEffect(() => {
