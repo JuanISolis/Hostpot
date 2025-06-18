@@ -7,5 +7,6 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <App />
         <AdCard />
+
     </BrowserRouter>
 )

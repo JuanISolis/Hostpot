@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import style from "./login.module.css";
 import AnimatedHero from "../heroAnimate/AnimatedHero";
 import { ModalVideo } from "../modalVideo/ModalVideo";
+import CardCarousel from "../../carrouselNew/CardCarrousel";
+
 
 
 export const LoginScreen = () => {
@@ -112,8 +114,12 @@ export const LoginScreen = () => {
 
                     </div>
 
+                    <CardCarousel />
                 </div>
             )}
+
+
+
         </>
     );
 };
