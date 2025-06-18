@@ -12,6 +12,16 @@ const images = [
     imgCarrousel3,
     imgCarrousel4,
     imgCarrousel5,
+    imgCarrousel3,
+    imgCarrousel4,
+    imgCarrousel5,
+    imgCarrousel4,
+    imgCarrousel5,
+    imgCarrousel2,
+    imgCarrousel3,
+    imgCarrousel3,
+    imgCarrousel4,
+    imgCarrousel5,
     imgCarrousel2,
     imgCarrousel3,
     imgCarrousel4,
@@ -21,7 +31,6 @@ export default function Carousel() {
     const [activeIndex, setActiveIndex] = useState(0);
     const length = images.length;
     const trackRef = useRef(null);
-
 
     const mod = (n, m) => ((n % m) + m) % m;
 
@@ -46,8 +55,17 @@ export default function Carousel() {
         }
     };
 
+    const next = () => setActiveIndex((prev) => mod(prev + 1, length));
+    const prev = () => setActiveIndex((prev) => mod(prev - 1, length));
 
+    // Autoplay effect
+    useEffect(() => {
+        const interval = setInterval(() => {
+            next();
+        }, 3000); // cambia de imagen cada 3 segundos
 
+        return () => clearInterval(interval); // limpia intervalo al desmontar
+    }, []);
 
     useEffect(() => {
         const track = trackRef.current;
@@ -56,30 +74,16 @@ export default function Carousel() {
         const activeItem = track.children[activeIndex];
         if (!activeItem) return;
 
-
         const containerWidth = track.parentElement.offsetWidth;
         const activeItemOffset = activeItem.offsetLeft + activeItem.offsetWidth / 2;
-
-
         const scrollAmount = activeItemOffset - containerWidth / 2;
-
 
         track.style.transform = `translateX(${-scrollAmount}px)`;
     }, [activeIndex]);
 
-    const prev = () => {
-        setActiveIndex(mod(activeIndex - 1, length));
-    };
-
-    const next = () => {
-        setActiveIndex(mod(activeIndex + 1, length));
-    };
-
     return (
         <div className={styles.carouselContainer}>
-            <button className={styles.buttonPrev} onClick={prev} aria-label="Previous">
-                ‹
-            </button>
+
             <div className={styles.carouselTrack} ref={trackRef}>
                 {images.map((src, i) => (
                     <div key={i} className={getClassName(i)}>
@@ -87,9 +91,7 @@ export default function Carousel() {
                     </div>
                 ))}
             </div>
-            <button className={styles.buttonNext} onClick={next} aria-label="Next">
-                ›
-            </button>
+
         </div>
     );
 }
