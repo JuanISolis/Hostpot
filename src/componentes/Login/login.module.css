@@ -109,6 +109,7 @@ input {
     color: white;
     text-align: center;
     font-family: "Playfair Display", serif;
+    z-index: 100;
 }
 
 .returnBtn:hover {

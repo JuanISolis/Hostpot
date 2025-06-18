@@ -4,7 +4,7 @@
   max-width: 900px;
   height: 320px;
   margin: 2rem auto;
-  overflow: hidden; /* ocultamos overflow para evitar scroll horizontal */
+  overflow: hidden; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,9 +17,7 @@
   will-change: transform;
   height: 300px;
   align-items: center;
-  /* ancho más amplio para alojar todos los items */
   width: max-content;
-  /* Añadimos margen para no cortar items */
   margin: 0 60px;
 }
 
