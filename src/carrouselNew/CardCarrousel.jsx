@@ -1,15 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
+import imgCarrousel1 from "../assetsCris/images/1.png";
+import imgCarrousel2 from "../assetsCris/images/2.png";
+import imgCarrousel3 from "../assetsCris/images/3.png";
+import imgCarrousel4 from "../assetsCris/images/4.png";
+import imgCarrousel5 from "../assetsCris/images/5.png";
 import styles from "./cardCarrousel.module.css";
 
 const images = [
-    "https://picsum.photos/300/300/?random&1",
-    "https://picsum.photos/300/300/?random&2",
-    "https://picsum.photos/300/300/?random&3",
-    "https://picsum.photos/300/300/?random&4",
-    "https://picsum.photos/300/300/?random&5",
-    "https://picsum.photos/300/300/?random&6",
-    "https://picsum.photos/300/300/?random&7",
-    "https://picsum.photos/300/300/?random&8",
+    imgCarrousel1,
+    imgCarrousel2,
+    imgCarrousel3,
+    imgCarrousel4,
+    imgCarrousel5,
+    imgCarrousel2,
+    imgCarrousel3,
+    imgCarrousel4,
 ];
 
 export default function Carousel() {
