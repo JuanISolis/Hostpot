@@ -30,11 +30,11 @@ const AnimatedHero = ({ title, btn }) => {
                 colors: {
                     background: "#3869e5",
                     particles: [
-                        "#4897ff",
-                        "#000000",
-                        "#2235e5",
-                        "#000000",
-                        "#14785a",
+                        "#af08d1",
+                        "#430560",
+                        "#363e81",
+                        "#4d0486",
+                        "#870fc3",
                     ],
                 },
                 blending: "overlay",
