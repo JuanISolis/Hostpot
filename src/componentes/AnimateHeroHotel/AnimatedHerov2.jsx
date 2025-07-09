@@ -35,10 +35,10 @@ const AnimatedHerov2 = () => {
                 colors: {
                     background: "#9138e5",
                     particles: [
-                        "#af08d1",
-                        "#8b0cc5",
-                        "#0c0e1f",
-                        "#0c0314",
+                        "#12f67c",
+                        "#48dd40",
+                        "#000106",
+                        "#390963",
                         "#130b16",
                     ],
                 },
