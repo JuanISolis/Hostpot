@@ -11,8 +11,8 @@ const BackgroundVideo = () => {
             <video
                 autoPlay
                 loop
-            // muted
-            // playsInline
+                muted
+                playsInline
             >
                 <source src={video} type="video/mp4" />
 
