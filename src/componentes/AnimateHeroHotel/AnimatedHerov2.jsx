@@ -100,56 +100,7 @@ const AnimatedHerov2 = () => {
                             <p>shushufindi, 7 DE junio</p>
                             <p>frente al control Policial</p>
                         </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
-                        <div className={style.cardHotel}>
-                            <img src={imgHotel3} alt="imagen de hotel 3" />
-                            <p>shushufindi, 7 DE junio</p>
-                            <p>frente al control Policial</p>
-                        </div>
+
                     </div>
                 </section>
             </div>
