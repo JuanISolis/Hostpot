@@ -52,7 +52,9 @@ const AdCard = () => {
                 ×
             </button>
 
-            <a href={randomAd.link} target="_blank" rel="noopener noreferrer">
+            {/* href={randomAd.link}  */}
+
+            <a target="_blank" rel="noopener noreferrer">
                 <div>
                     <img
                         src={randomAd.image}
